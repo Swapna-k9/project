@@ -1,0 +1,8 @@
+<div>
+    <h1>Review</h1>
+    <p>The Scottish bacteriologist who discovered penicillin was is Alexander Fleming</p>
+    <p>The number of already named bones in the human skeleton are 206</p>
+    <p>The national museum is located at New Delhi</p>
+    <p> The purest form of water can be obtained from is from rain water</p>
+    <p>The Netaji Subhas National Institute of Sports is located at Patiala</p>
+</div>

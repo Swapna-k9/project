@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+  <title>General Knowledge Quiz</title>
+   <img src="https://i.gifer.com/877c.gif" width="300"
+         height="150">
+	
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="prefixfree.min.js"></script>
+  
+</head>
+<body>
+  <body style="background-color:grey;">
+    
+   
+    </body>
+<div id="wrapper">
+   <button id="start" onClick="questionApp();">Start quiz</button>
+  
+  
+  <h1>General knowledge quiz</h1>
+  <script src="questions.js"></script>
+  <script src="questionapp.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+var Questions = { "question" : [
+    {
+      "question"  : "The Scottish bacteriologist who discovered penicillin was??",
+       "choice1"  : "Albert Einstein",
+       "choice2"  : "Archimeder",
+       "choice3"  : "Alexander Fleming",
+       "choice4"  : "Albert ",
+       "choice5"  : "",                    
+       "correct"  : 3
+    },
+    
+    {
+      "question"  : "The number of already named bones in the human skeleton is?",
+       "choice1"  : "200",
+       "choice2"  : "206",
+       "choice3"  : "210",
+       "choice4"  : "121",
+       "choice5"  : "267",                    
+       "correct"  : 2
+    },
+    
+    {
+      "question"  : "The national museum is located at?",
+       "choice1"  : "Mumbai",
+       "choice2"  : "Lucknow",
+       "choice3"  : "Delhi",
+       "choice4"  : "Kolkata",
+       "choice5"  : "Banglore",                    
+       "correct"  : 3
+    },
+    
+    {
+      "question"  : "The purest form of water can be obtained from?",
+       "choice1"  : "a deep tubewell",
+       "choice2"  : "a heavy shower of rain",
+       "choice3"  : "a running stream",
+       "choice4"  : " lake water",
+       "choice5"  : "hot water",                    
+       "correct"  : 5
+    },
+    
+    {
+      "question"  : "The Netaji Subhas National Institute of Sports is located at",
+       "choice1"  : "Bangalore",
+       "choice2"  : "Patiala",
+       "choice3"  : "Darjeeling",
+       "choice4"  : "kolkata",
+       "choice5"  : "dehradun",                    
+       "correct"  : 2
+    }
+    
+  ]};
