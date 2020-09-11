@@ -1,0 +1,8 @@
+<div class="container">
+    <h3><u>Enter Shoe Details Below to add in DB</u></h3>
+    <input class="form-control" type="text" [(ngModel)]="shoe.color" placeholder="Enter Shoe Color"/>
+    <input class="form-control" type="text" [(ngModel)]="shoe.price" placeholder="Enter Shoe Price"/>
+    <input class="form-control" type="text" [(ngModel)]="shoe.brand" placeholder="Enter Shoe Brand"/>
+    <input class="form-control" type="url" [(ngModel)]="shoe.avatar" placeholder="Paste Shoe Image URL"/>
+    <button class="btn btn-primary" type="button" (click)="addShoe()">Add Shoe</button>
+</div>
