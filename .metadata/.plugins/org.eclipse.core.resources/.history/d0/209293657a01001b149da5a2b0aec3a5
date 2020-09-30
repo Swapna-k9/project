@@ -1,0 +1,65 @@
+package com.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.demo.model.Medicine;
+import com.demo.model.Registration;
+import com.demo.service.MedicineService;
+import com.demo.service.RegistrationService;
+
+@CrossOrigin(origins="http://localhost:4200")
+@RestController
+public class RegistrationController  {
+	
+	@Autowired
+	private RegistrationService service;
+
+	@PostMapping("/registration")
+	public Registration addRegistration(@RequestBody Registration registration) {
+		return service.addRegistration(registration);
+	}
+	@PutMapping("/registration")
+	public Registration updateRegistration(@RequestBody Registration registration) {
+		return service.updateRegistration(registration);
+	}
+
+    @GetMapping("/registration/{id}")
+	public Registration getById(@PathVariable int id) {
+		
+		return service.getById(id);
+	}
+
+    @DeleteMapping("/medicine/{id}")
+	public void deleteMedicineById(@PathVariable int id) {
+		service.deleteMedicineById(id);
+		
+	}
+
+	@GetMapping("/medicine")
+	public List<Medicine> getAllMedicines() {
+		return service.getAllMedicines();
+	}
+
+    @GetMapping("/medicines/brand/{brand}")
+	public List<Medicine> getAllMedicinesByBrand(@PathVariable String brand) {
+		
+		return service.getAllMedicinesByBrand(brand);
+	}
+
+    @GetMapping("/medicines/name/{name}")
+	public List<Medicine> getAllMedicinesByName(@PathVariable String name) {
+		return service.getAllMedicinesByName(name);
+		
+	}
+
+}

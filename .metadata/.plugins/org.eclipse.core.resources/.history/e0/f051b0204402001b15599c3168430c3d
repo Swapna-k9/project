@@ -1,0 +1,52 @@
+package com.demo.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.demo.dao.RegistrationRepository;
+import com.demo.model.Registration;
+import com.demo.service.RegistrationService;
+
+
+
+@Service
+public class RegistrationServiceImpl implements RegistrationService {
+
+	@Autowired
+	private RegistrationRepository dao;
+	
+	@Override
+	public Registration addRegistration(Registration registration) {
+		
+		return dao.save(registration);
+	}
+	@Override
+	public Registration updateRegistration(Registration registration) {
+		
+		return dao.save(registration);
+	}
+
+	
+	@Override
+	public Registration getById(int id) {
+		
+		return dao.findById(id).get();
+	}
+
+	@Override
+	public void deleteRegistrationById(int id) {
+	
+	dao.deleteById(id);	
+	}
+
+	@Override
+	public List<Registration> getAllRegistrations() {
+	
+		return dao.findAll();
+	}
+
+	
+	
+}

@@ -1,0 +1,55 @@
+package com.demo.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.demo.model.Medicine;
+import com.demo.service.MedicineService;
+
+@Service
+public class MedicineServiceImpl implements MedicineService {
+
+	@Override
+	public Medicine addMedicine(Medicine medicine) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Medicine updateMedicine(Medicine medicine) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Medicine getMedicineById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteMedicineById(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Medicine> getAllMedicines() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Medicine> getAllMedicinesByBrand(String brand) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Medicine> getAllMedicinesByQuantity(String quantity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

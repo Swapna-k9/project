@@ -1,0 +1,11 @@
+package com.demo.model;
+
+public class Medicine {
+	private int id;
+	private String name;
+	private String brand;
+	private int quantity;
+	private int suitableage;
+	private int price;
+
+}
